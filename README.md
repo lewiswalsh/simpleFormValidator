@@ -23,7 +23,7 @@ Then inside your document ready function call the plugin on your form:
 ```
 <script>
 	jQuery(document).ready(function($){
-		$('.myForm').myFormValidator();
+		$('.myForm').simpleFormValidator();
 	});
 </script>
 ```

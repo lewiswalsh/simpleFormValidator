@@ -1,6 +1,6 @@
 (function($){
     $.fn.extend({ 
-        myFormValidator: function(options) {
+        simpleFormValidator: function(options) {
 		
 			var defaults = {
 				toolTipWidth:		200,
