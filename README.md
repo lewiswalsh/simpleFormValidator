@@ -3,7 +3,7 @@ A simple, small jQuery form validator with tooltips
 
 ### Usage
 
-Include the plugin after you've loaded jQuery, preferably before the closing </body> tag:
+Include the plugin after you've loaded jQuery, preferably before the closing `</body>` tag:
 
 ```
 <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
@@ -13,7 +13,7 @@ Include the plugin after you've loaded jQuery, preferably before the closing </b
 Ensure your form has a name, class or ID so jQuery can select it:
 
 ```
-<form method='POST' action='?' class='.myForm'>
+<form method='POST' action='?' class='myForm'>
 ...
 </form>
 ```
