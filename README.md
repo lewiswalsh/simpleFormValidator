@@ -29,7 +29,8 @@ Then inside your document ready function call the plugin on your form:
 ```
 
 ### Options
-
+| Option              | Description |
+| ------------------- | ----------- |
 | `toolTipClassName`  | The class to be applied to all tooltips |
 | `toolTipIdPrefix`   | A prefix for the ID of all tooltips, this is appended with a number |
 | `toolTipOffsetTop`  | The number of pixels from the top of the element the tooltip should render |
