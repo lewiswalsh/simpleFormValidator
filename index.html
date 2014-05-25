@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Simpleformvalidator by lewiswalsh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Simpleformvalidator</h1>
+        <p>A small, simple JQuery plugin to validate forms showing errors as tooltips</p>
+
+        <p class="view"><a href="https://github.com/lewiswalsh/simpleFormValidator">View the Project on GitHub <small>lewiswalsh/simpleFormValidator</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lewiswalsh/simpleFormValidator/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lewiswalsh/simpleFormValidator/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lewiswalsh/simpleFormValidator">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="a-simple-small-jquery-form-validator-with-tooltips" class="anchor" href="#a-simple-small-jquery-form-validator-with-tooltips"><span class="octicon octicon-link"></span></a>A simple, small jQuery form validator with tooltips</h2>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Include the plugin after you've loaded jQuery, preferably before the closing <code>&lt;/body&gt;</code> tag:</p>
+
+<pre><code>&lt;script src='https://code.jquery.com/jquery-2.1.1.min.js'&gt;&lt;/script&gt;
+&lt;script src='jquery.plugin.lw.myformvalidator.js'&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Ensure your form has a name, class or ID so jQuery can select it:</p>
+
+<pre><code>&lt;form method='POST' action='?' class='myForm'&gt;
+...
+&lt;/form&gt;
+</code></pre>
+
+<p>Then inside your document ready function call the plugin on your form:</p>
+
+<pre><code>&lt;script&gt;
+    jQuery(document).ready(function($){
+        $('.myForm').myFormValidator();
+    });
+&lt;/script&gt;
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lewiswalsh">lewiswalsh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
