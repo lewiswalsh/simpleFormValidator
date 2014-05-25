@@ -7,7 +7,7 @@ Include the plugin after you've loaded jQuery, preferably before the closing `</
 
 ```
 <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-<script src='jquery.plugin.lw.myformvalidator.js'></script>
+<script src='simpleformvalidator.min.js'></script>
 ```
 
 Ensure your form has a name, class or ID so jQuery can select it:
