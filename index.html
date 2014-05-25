@@ -31,13 +31,15 @@
         <h2>
 <a name="a-simple-small-jquery-form-validator-with-tooltips" class="anchor" href="#a-simple-small-jquery-form-validator-with-tooltips"><span class="octicon octicon-link"></span></a>A simple, small jQuery form validator with tooltips</h2>
 
+<p><img src="http://i.imgur.com/kIiGaPb.jpg?1" alt="Screenshot example"></p>
+
 <h3>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
 <p>Include the plugin after you've loaded jQuery, preferably before the closing <code>&lt;/body&gt;</code> tag:</p>
 
 <pre><code>&lt;script src='https://code.jquery.com/jquery-2.1.1.min.js'&gt;&lt;/script&gt;
-&lt;script src='jquery.plugin.lw.myformvalidator.js'&gt;&lt;/script&gt;
+&lt;script src='simpleformvalidator.min.js'&gt;&lt;/script&gt;
 </code></pre>
 
 <p>Ensure your form has a name, class or ID so jQuery can select it:</p>
@@ -51,10 +53,54 @@
 
 <pre><code>&lt;script&gt;
     jQuery(document).ready(function($){
-        $('.myForm').myFormValidator();
+        $('.myForm').simpleFormValidator();
     });
 &lt;/script&gt;
 </code></pre>
+
+<h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<table>
+<thead><tr>
+<th>Option</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>toolTipClassName</code></td>
+<td>The class to be applied to all tooltips</td>
+</tr>
+<tr>
+<td><code>toolTipIdPrefix</code></td>
+<td>A prefix for the ID of all tooltips, this is appended with a number</td>
+</tr>
+<tr>
+<td><code>toolTipOffsetTop</code></td>
+<td>The number of pixels from the top of the element the tooltip should render</td>
+</tr>
+<tr>
+<td><code>toolTipMarginLeft</code></td>
+<td>The size of the margin to the left of the tooltip</td>
+</tr>
+<tr>
+<td><code>triangleOffsetTop</code></td>
+<td>The number of pixels added to the toolTipOffsetTop for the little triangle's vertical position</td>
+</tr>
+<tr>
+<td><code>toolTipColour</code></td>
+<td>Text colour for the tooltip</td>
+</tr>
+<tr>
+<td><code>toolTipBackground</code></td>
+<td>Background colour for the tooltip</td>
+</tr>
+<tr>
+<td><code>toolTipOpacity</code></td>
+<td>Opacity in percent of the tooltip</td>
+</tr>
+</tbody>
+</table>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/lewiswalsh">lewiswalsh</a></p>
