@@ -3,11 +3,14 @@
         simpleFormValidator: function(options) {
 		
 			var defaults = {
-				toolTipWidth:		200,
-				toolTipClassName:	'myFormValidatorTooltip',
-				toolTipIdPrefix:	'myFormValidatorTooltip-',
-				toolTipOffsetTop:	5,
-				toolTipOffsetLeft:	17
+				toolTipClassName:		'myFormValidatorTooltip',
+				toolTipIdPrefix:		'myFormValidatorTooltip-',
+				toolTipOffsetTop:		5,
+				toolTipMarginLeft:		17,
+				triangleOffsetTop:		3,
+				toolTipColour:			'#fff',
+				toolTipBackground:		'#555',
+				toolTipOpacity:			80
 			};
 			
 			var options = $.extend(defaults, options); // overwrite defaults with passed options
@@ -23,8 +26,8 @@
 				//$("<style type='text/css'> ."+ o.toolTipClassName +" { text-align: left; font-size: 11px; width: "+ o.toolTipWidth +"; padding: 10px; background: #555; position: absolute; color:#fff; } </style>").appendTo('head');
 				
 				var tooltipCSS 	= "<style type='text/css'> ";
-				tooltipCSS 		+= "."+ o.toolTipClassName +" { text-align: left; font-size: 11px; width: "+ o.toolTipWidth +"; padding: 10px; background: #555; position: absolute; color:#fff; }";
-				tooltipCSS 		+= "."+ o.toolTipClassName +":after { content: ''; position: absolute; top: "+ (o.toolTipOffsetTop + 3) +"px; right: 100%; margin-top: -8px; width: 0; height: 0; border-right: 8px solid #555; border-top: 8px solid transparent; border-bottom: 8px solid transparent; }";
+				tooltipCSS 		+= "."+ o.toolTipClassName +" { z-index: 79; text-align: left; font-size: 11px; padding: 10px; background: "+ o.toolTipBackground +"; position: absolute; color: "+ o.toolTipColour +"; opacity: "+ (parseInt(o.toolTipOpacity,10) / 100) +"; }";
+				tooltipCSS 		+= "."+ o.toolTipClassName +":after { content: ''; position: absolute; top: "+ (o.toolTipOffsetTop + o.triangleOffsetTop) +"px; right: 100%; margin-top: -8px; width: 0; height: 0; border-right: 8px solid "+ o.toolTipBackground +"; border-top: 8px solid transparent; border-bottom: 8px solid transparent; opacity: "+ (parseInt(o.toolTipOpacity,10) / 100) +"; }";
 				tooltipCSS 		+= "</style>";
 				$(tooltipCSS).appendTo('head');
 			
@@ -38,7 +41,7 @@
 						$('#'+ id).parent().css({ position: 'relative' }); // ensure the document.body has a position of relative;
 						$('#'+ id).css({
 							top: 		props.top + o.toolTipOffsetTop, 
-							left: 		props.left + o.toolTipOffsetLeft, 
+							left: 		props.left + o.toolTipMarginLeft, 
 							position:	'absolute'
 						});
 					}
