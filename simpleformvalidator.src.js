@@ -27,7 +27,7 @@
 				
 				var tooltipCSS 	= "<style type='text/css'> ";
 				tooltipCSS 		+= "."+ o.toolTipClassName +" { z-index: 79; text-align: left; font-size: 11px; padding: 10px; background: "+ o.toolTipBackground +"; position: absolute; color: "+ o.toolTipColour +"; opacity: "+ (parseInt(o.toolTipOpacity,10) / 100) +"; }";
-				tooltipCSS 		+= "."+ o.toolTipClassName +":after { content: ''; position: absolute; top: "+ (o.toolTipOffsetTop + o.triangleOffsetTop) +"px; right: 100%; margin-top: -8px; width: 0; height: 0; border-right: 8px solid "+ o.toolTipBackground +"; border-top: 8px solid transparent; border-bottom: 8px solid transparent; opacity: "+ (parseInt(o.toolTipOpacity,10) / 100) +"; }";
+				tooltipCSS 		+= "."+ o.toolTipClassName +":after { content: ''; position: absolute; top: "+ (o.toolTipOffsetTop + o.triangleOffsetTop) +"px; right: 100%; margin-top: -8px; width: 0; height: 0; border-right: 8px solid "+ o.toolTipBackground +"; border-top: 8px solid transparent; border-bottom: 8px solid transparent; }";
 				tooltipCSS 		+= "</style>";
 				$(tooltipCSS).appendTo('head');
 			
