@@ -1,7 +1,7 @@
 A simple, small jQuery form validator with tooltips
 ---------------------------------------------------
 
-[Screenshot example](http://i.imgur.com/kIiGaPb.jpg)
+![Screenshot example](http://i.imgur.com/kIiGaPb.jpg)
 
 ### Usage
 
