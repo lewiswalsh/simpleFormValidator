@@ -1,6 +1,8 @@
 A simple, small jQuery form validator with tooltips
 ---------------------------------------------------
 
+[Screenshot example](http://i.imgur.com/kIiGaPb.jpg)
+
 ### Usage
 
 Include the plugin after you've loaded jQuery, preferably before the closing `</body>` tag:
